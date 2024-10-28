@@ -10,7 +10,7 @@ class Posts(models.Model):
   # 포스트 모델 스키마 (제목, 본문, 슬러그, 카테고리, 포스트날짜, 수정날짜)
   title= models.CharField(max_length=100)
   body= models.TextField() 
-  slug= models.SlugField(unique=True)
+  slug= models.SlugField(unique=True, blank=True, null=True)
   category = models.CharField(max_length=15, choices=CATEGORY, default='PERSONAL')
   created = models.DateTimeField(auto_now_add=True)
   updated = models.DateTimeField(auto_now=True)
