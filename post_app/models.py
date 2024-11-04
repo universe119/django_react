@@ -21,7 +21,7 @@ class Posts(models.Model):
     return self.title
 
   # 슬러그 없을시 고유 슬러그 추가해서 포스트 모델 생성 메서드
-  def save(self, *args, ** kwargs):
+  def save(self, *args, **kwargs):
     if not self.slug:
       
       #추후 게시글 필터링할 때 필요한 기본 슬러그 생성
