@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-b++s_@^l-d$_l@#bbj%lsu8=@bqk+va-(0bgih&2k6@c3r=-nf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Render 서비스에서 배포 후 등록한 url
-ALLOWED_HOSTS = ["localhost","psyh-hotelcommunitydb.onrender.com","group-b-hotel.vercel.app"]
+# Render 서비스에서 배포 후 등록한 url (http빼고)
+ALLOWED_HOSTS = [
+    "localhost",
+    "psyh-hotelcommunitydb.onrender.com",
+    "group-b-hotel.vercel.app",
+]
 
 # Application definition
 # 만약 추가되는 라이브러리나 앱이 있을시에 무조건 아래쪽에 등록
